@@ -19,7 +19,7 @@ This evaluator uses **strict** scoring because AI models need to learn productio
 - **HIGH issue** = -20 points
 - **MEDIUM issue** = -10 points  
 - **CRITICAL issue** = auto-fail
-- **Passing score** = 85+ (tougher than typical linters)
+- **Passing score** = 95+ (tougher than typical linters)
 
 ## Demo: 3 AI-Generated Failures
 
