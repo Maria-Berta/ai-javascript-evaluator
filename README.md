@@ -78,7 +78,7 @@ Empty catch block that silently ignores errors
 Why it matters: AI frequently ignores error handling, which causes production crashes and silent failures.
 
 
-3. Memory Leak (Score: 45/100 - FAIL)
+### 3. Memory Leak (Score: 45/100 - FAIL)
 ```javascript
 function setupAutoSave() {
   // ❌ setInterval without cleanup - runs forever
