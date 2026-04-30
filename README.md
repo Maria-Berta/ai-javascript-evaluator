@@ -37,10 +37,11 @@ What the evaluator catches:
 Missing await before fetch() call
 Mixing async/await with .then() chains
 Async function invoked without proper handling
+
 Why it matters: AI models often confuse promise syntax, leading to race conditions and undefined behavior.
 
 
-###2. No Error Handling (Score 35/100 - FAIL)
+### 2. No Error Handling (Score 35/100 - FAIL)
 ```javascript
 async function deleteDatabaseRecord(id) {
   // ❌ No try/catch around database operation
@@ -73,10 +74,11 @@ What the evaluator catches:
 Async function with await lacks try/catch
 Promise created without .catch() handler
 Empty catch block that silently ignores errors
+
 Why it matters: AI frequently ignores error handling, which causes production crashes and silent failures.
 
 
-###3. Memory Leak (Score: 45/100 - FAIL)
+3. Memory Leak (Score: 45/100 - FAIL)
 ```javascript
 function setupAutoSave() {
   // ❌ setInterval without cleanup - runs forever
@@ -114,4 +116,5 @@ setInterval without clearInterval reference
 Large array held in closure (prevents garbage collection)
 addEventListener without removeEventListener
 Multiple listeners accumulating indefinitely
+
 Why it matters: AI models don't "remember" cleanup requirements, leading to memory exhaustion in long-running apps.
