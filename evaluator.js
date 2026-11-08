@@ -312,7 +312,7 @@ async function evaluateCode(code) {
   }
   
   console.log('\n' + '='.repeat(60));
-  console.log(`🎯 VERDICT: ${score >= 70 ? 'PASS - Acceptable AI response' : 'FAIL - Needs improvement'}\n`);
+  console.log(`🎯 VERDICT: ${score >= 95 ? 'PASS - Acceptable AI response' : 'FAIL - Needs improvement'}\n`);
   
   return { score, asyncIssues, errorIssues, memoryIssues };
 }
